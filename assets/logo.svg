@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <!-- Dark Slate 950 Background (#020617) with ambient depth -->
+    <linearGradient id="mm-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b132b" />
+      <stop offset="50%" stop-color="#020617" />
+      <stop offset="100%" stop-color="#01040f" />
+    </linearGradient>
+
+    <!-- Subtle Premium Border Rim -->
+    <linearGradient id="mm-rim" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.4" />
+      <stop offset="50%" stop-color="#6366f1" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#a855f7" stop-opacity="0.35" />
+    </linearGradient>
+
+    <!-- Master Brand Gradient: Electric Cyan -> Radiant Indigo -> Vivid Violet -->
+    <linearGradient id="mm-brand" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f2fe" />
+      <stop offset="28%" stop-color="#38bdf8" />
+      <stop offset="68%" stop-color="#6366f1" />
+      <stop offset="100%" stop-color="#a855f7" />
+    </linearGradient>
+
+    <!-- Wireless Audio Waves Gradient -->
+    <linearGradient id="mm-wave" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#6366f1" />
+      <stop offset="50%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#00f2fe" />
+    </linearGradient>
+
+    <!-- Studio Microphone Capsule Gradient -->
+    <linearGradient id="mm-capsule" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="38%" stop-color="#f0f9ff" />
+      <stop offset="75%" stop-color="#bae6fd" />
+      <stop offset="100%" stop-color="#38bdf8" />
+    </linearGradient>
+
+    <!-- Ambient Audio Energy Glow behind symbol -->
+    <radialGradient id="mm-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.32" />
+      <stop offset="55%" stop-color="#38bdf8" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="#020617" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Professional Studio Drop Shadow -->
+    <filter id="mm-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#4f46e5" flood-opacity="0.45" />
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#00f2fe" flood-opacity="0.25" />
+    </filter>
+  </defs>
+
+  <rect width="512" height="512" rx="114" fill="url(#mm-bg)" />
+         <rect width="510" height="510" x="1" y="1" rx="113" fill="none" stroke="url(#mm-rim)" stroke-width="2" />
+
+  <!-- Ambient Audio Field Glow centered exactly on symbol (only for opaque backgrounds) -->
+  <circle cx="256" cy="256" r="185" fill="url(#mm-glow)" />
+
+  <g  filter="url(#mm-shadow)">
+    <!-- 1. Wireless Broadcast Audio Waves (Concentric Arcs Expanding Upward, centered at 256) -->
+    <!-- Outer Wave -->
+    <path d="M 166 119 A 108 108 0 0 1 346 119" 
+          fill="none" 
+          stroke="url(#mm-wave)" 
+          stroke-width="12" 
+          stroke-linecap="round" 
+          opacity="0.65" />
+
+    <!-- Middle Wave -->
+    <path d="M 194 136 A 78 78 0 0 1 318 136" 
+          fill="none" 
+          stroke="url(#mm-wave)" 
+          stroke-width="12" 
+          stroke-linecap="round" 
+          opacity="0.85" />
+
+    <!-- Inner Wave -->
+    <path d="M 220 155 A 48 48 0 0 1 292 155" 
+          fill="none" 
+          stroke="url(#mm-wave)" 
+          stroke-width="11" 
+          stroke-linecap="round" 
+          opacity="1.0" />
+
+    <!-- 2. Continuous Sculptural Letter 'M' Ribbon (centered at 256, Y: 215 to 453) -->
+    <path d="M 118 437
+             L 118 255
+             C 118 215, 146 209, 168 235
+             L 256 355
+             L 344 235
+             C 366 209, 394 215, 394 255
+             L 394 437"
+          fill="none"
+          stroke="url(#mm-brand)"
+          stroke-width="32"
+          stroke-linecap="round"
+          stroke-linejoin="round" />
+
+    <!-- 3. Microphone Stand Mount Connector -->
+    <line x1="256" y1="305" x2="256" y2="355" stroke="url(#mm-brand)" stroke-width="14" stroke-linecap="round" />
+
+    <!-- 4. Microphone Shockmount Cradle (U-Bracket) -->
+    <path d="M 204 237
+             C 204 307, 308 307, 308 237"
+          fill="none"
+          stroke="url(#mm-brand)"
+          stroke-width="14"
+          stroke-linecap="round" />
+
+    <!-- 5. Studio Microphone Capsule -->
+    <rect x="222" y="173" width="68" height="104" rx="34" fill="url(#mm-capsule)" />
+
+    <!-- Capsule Divider Line -->
+    <line x1="228" y1="225" x2="284" y2="225" stroke="#0f172a" stroke-width="4.5" stroke-linecap="round" />
+
+    <!-- Acoustic Pickup Grille Slots -->
+    <line x1="237" y1="199" x2="275" y2="199" stroke="#0f172a" stroke-width="3.5" stroke-linecap="round" opacity="0.85" />
+    <line x1="235" y1="211" x2="277" y2="211" stroke="#0f172a" stroke-width="3.5" stroke-linecap="round" opacity="0.85" />
+    <line x1="240" y1="247" x2="272" y2="247" stroke="#0369a1" stroke-width="3.5" stroke-linecap="round" opacity="0.85" />
+
+    <!-- Cyan Glowing LED Status Indicator -->
+    <circle cx="256" cy="225" r="4.5" fill="#00f2fe" />
+  </g>
+</svg>
